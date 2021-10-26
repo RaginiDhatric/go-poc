@@ -6,7 +6,7 @@ import (
 )
 
 var(
-	bookRepo repo.BookRepository = repo.NewInMemBookRepo()
+	bookRepo repo.BookRepository = repo.NewMongoDBRepo()
 )
 
 type BookService interface {
