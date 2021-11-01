@@ -15,5 +15,5 @@ var (
 func main() {
 	muxRouter.Get("/book", productController.GetProduct)
 	muxRouter.Post("/book", productController.CreateProduct)
-	muxRouter.Serve("localhost:9091")
+	muxRouter.Serve(":9091")
 }

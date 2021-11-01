@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+  go-poc:
+    image: raginidhatric/go-poc
+    ports:
+      - "9091:9091"
+    depends_on:
+      - mongodb

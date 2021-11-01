@@ -15,7 +15,7 @@ var clientInstanceError error
 var mongoOnce sync.Once
 
 const (
-	CONNECTIONSTRING = "mongodb://localhost:27017"
+	CONNECTIONSTRING = "mongodb://mongodb:27017"
 	DB               = "books_db"
 	BOOKS            = "books_collection"
 )
